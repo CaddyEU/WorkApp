@@ -34,9 +34,8 @@ namespace WorkApp.Views
             _button.Text = "Make a call";
             _button.Clicked += call_btn_Clicked;
             stackLayout.Children.Add(_button);
-
-
         }
+
         private void call_btn_Clicked(object sender, EventArgs e)
         {
             var call = CrossMessaging.Current.PhoneDialer;
